@@ -1,0 +1,19 @@
+{
+    "name": "weltpixel/magento2-weltpixel-newsletter-lite",
+    "description": "WeltPixel Newsletter Module",
+    "require": {
+        "weltpixel/magento2-weltpixel-mobiledetect": "*",
+        "magento/module-newsletter": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.15.9",
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "WeltPixel\\Newsletter\\": ""
+        }
+    }
+}
