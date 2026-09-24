@@ -21,7 +21,7 @@ $_helper = $this->helper('WeltPixel\Newsletter\Helper\Data');
             <?php  if ($_helper->isTermsConditionsCheckboxRequired()) : ?>
             <input id="terms_conditions_consent" name="terms_conditions_consent" type="checkbox" data-validate="{required:true}" />
             <?php endif; ?>
-            <label for="terms_conditions_consent" ><?php /* @noEscape */ echo $_helper->getTermsConditionsText(); ?></label>
+            <label for="terms_conditions_consent" ><?php echo $block->escapeHtml($_helper->getTermsConditionsText(), ['a', 'b', 'strong', 'em', 'i', 'u', 'br', 'span', 'p']); ?></label>
         </div>
         <?php endif; ?>
     </div>

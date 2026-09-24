@@ -98,7 +98,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
      * @return integer
      */
     public function getVisitedPages() {
-        return $this->_newsletterOptions['general']['display_after_pages'];
+        return (int)$this->_newsletterOptions['general']['display_after_pages'];
     }
 
     /**
